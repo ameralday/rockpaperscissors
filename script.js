@@ -6,9 +6,9 @@ function getComputerChoice() {
     //variable for result
     let result = 0
 
-    variable for math.random?
+    variable for math.random? nope
 
-    create a button that activates the function
+    create a button that activates the function, not yet
 
     create a random number generator and multiply it by 100 before rounding down so that it returns a whole number (math.floor)
 
@@ -22,11 +22,23 @@ function getComputerChoice() {
     
     
     */
-    return Math.floor(Math.random() * 10);
 
+    let result = Math.floor(Math.random() * 10); 
 
     
-
+    switch (true){
+        case (result < 3):
+            console.log("rock");
+            break;
+        
+        case (result < 6):
+            console.log("paper");
+            break;
+        
+        default:
+            console.log("scissors");
+            break;
+    }
 }
 
 console.log(getComputerChoice());
