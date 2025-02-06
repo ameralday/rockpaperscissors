@@ -1,9 +1,5 @@
-console.log("free the people")
-
 function getComputerChoice() {
-    /*
-
-    //variable for result
+    /* variable for result
     let result = 0
 
     variable for math.random? nope
@@ -19,22 +15,17 @@ function getComputerChoice() {
     Have it return the string "scissors" when the number is <9 (also 3 chances: 6,7,8)
 
     console.log the result
-    
-    
     */
 
     let result = Math.floor(Math.random() * 10); 
 
-    
     switch (true){
         case (result < 3):
             console.log("rock");
             break;
-        
         case (result < 6):
             console.log("paper");
             break;
-        
         default:
             console.log("scissors");
             break;
@@ -42,4 +33,18 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+    /* create variable for human choice
+    create prompt
+    create return of human choice*/
+
+    let choice = prompt("Choose: rock, paper, scissors");
+    return choice;
+}
+
+console.log(getHumanChoice());
+
+let humanScore = 0;
+let computerScore = 0;
 
